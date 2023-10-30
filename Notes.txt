@@ -1,0 +1,38 @@
+1.For the given JSON iterate over all for loops(for,for in,for of)
+JSON : Javascript Object Notation
+For loops:
+const PersonDetails = [{
+
+    
+        "name" : "Ram",
+        "age"  : "21",
+        "city": "Madurai"
+    },
+    {
+        "name" : "joe",
+        "age"  : "23",
+        "city": "chennai"
+    },
+    {
+        "name" : "joel",
+        "age"  : "22",
+        "city": "coimbatore"
+    }
+]
+//using for loops:
+    console.log( PersonDetails);
+    console.log("By using for loop");
+    for(let i=0;i<PersonDetails.length;i=i+1){
+        console.log(PersonDetails[i].name,PersonDetails[i].age,PersonDetails[i].city)
+    }
+    //By using for in loops:
+    console.log("By using for in loop");
+    for(let index in PersonDetails){
+        console.log(PersonDetails[index].name,PersonDetails[index].age,PersonDetails[index].city)
+    }
+    //By using for of loops:
+    console.log("By using for of loop");
+    for(let object in PersonDetails){
+        console.log(PersonDetails[object].name,PersonDetails[object].age,PersonDetails[object].city)
+    }
+    
